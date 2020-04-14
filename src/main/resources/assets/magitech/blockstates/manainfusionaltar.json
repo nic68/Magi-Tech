@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "magitech:block/manainfusionaltar"
+    },
+    "facing=east": {
+      "model": "magitech:block/manainfusionaltar",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "magitech:block/manainfusionaltar",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "magitech:block/manainfusionaltar",
+      "y": 270
+    }
+  }
+}

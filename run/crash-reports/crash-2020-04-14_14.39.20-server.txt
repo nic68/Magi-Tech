@@ -1,0 +1,106 @@
+---- Minecraft Crash Report ----
+// You're mean.
+
+Time: 4/14/20 2:39 PM
+Description: Ticking entity
+
+java.lang.ArrayIndexOutOfBoundsException: 4
+	at java.util.Arrays$ArrayList.get(Arrays.java:3841) ~[?:1.8.0_232] {}
+	at net.minecraft.util.NonNullList.get(NonNullList.java:45) ~[?:?] {re:classloading}
+	at net.magitech.block.ManaInfusionAltarBlock$CustomTileEntity.getStackInSlot(ManaInfusionAltarBlock.java:276) ~[?:?] {re:classloading}
+	at net.minecraft.inventory.container.Slot.getStack(Slot.java:70) ~[?:?] {re:classloading}
+	at net.minecraft.inventory.container.Container.detectAndSendChanges(Container.java:128) ~[?:?] {re:classloading}
+	at net.minecraft.entity.player.ServerPlayerEntity.tick(ServerPlayerEntity.java:337) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.server.ServerWorld.updateEntity(ServerWorld.java:602) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.func_217390_a(World.java:734) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.server.ServerWorld.tick(ServerWorld.java:397) ~[?:?] {re:classloading}
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:865) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:800) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:118) ~[?:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:646) [?:?] {re:classloading,pl:accesstransformer:B}
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_232] {}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server thread
+Stacktrace:
+	at java.util.Arrays$ArrayList.get(Arrays.java:3841)
+	at net.minecraft.util.NonNullList.get(NonNullList.java:45)
+	at net.magitech.block.ManaInfusionAltarBlock$CustomTileEntity.getStackInSlot(ManaInfusionAltarBlock.java:276)
+	at net.minecraft.inventory.container.Slot.getStack(Slot.java:70)
+	at net.minecraft.inventory.container.Container.detectAndSendChanges(Container.java:128)
+	at net.minecraft.entity.player.ServerPlayerEntity.tick(ServerPlayerEntity.java:337)
+	at net.minecraft.world.server.ServerWorld.updateEntity(ServerWorld.java:602)
+
+-- Entity being ticked --
+Details:
+	Entity Type: minecraft:player (net.minecraft.entity.player.ServerPlayerEntity)
+	Entity ID: 221
+	Entity Name: Dev
+	Entity's Exact location: 280.51, 68.00, 39.46
+	Entity's Block location: World: (280,68,39), Chunk: (at 8,4,7 in 17,2; contains blocks 272,0,32 to 287,255,47), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+	Entity's Momentum: 0.00, -0.08, 0.00
+	Entity's Passengers: []
+	Entity's Vehicle: ~~ERROR~~ NullPointerException: null
+Stacktrace:
+	at net.minecraft.world.World.func_217390_a(World.java:734)
+	at net.minecraft.world.server.ServerWorld.tick(ServerWorld.java:397)
+
+-- Affected level --
+Details:
+	All players: 1 total; [ServerPlayerEntity['Dev'/221, l='test', x=280.51, y=68.00, z=39.46]]
+	Chunk stats: ServerChunkCache: 2117
+	Level dimension: DimensionType{minecraft:overworld}
+	Level name: test
+	Level seed: 4553467753995104373
+	Level generator: ID 00 - default, ver 1. Features enabled: true
+	Level generator options: {}
+	Level spawn location: World: (240,64,-59), Chunk: (at 0,4,5 in 15,-4; contains blocks 240,0,-64 to 255,255,-49), Region: (0,-1; contains chunks 0,-32 to 31,-1, blocks 0,0,-512 to 511,255,-1)
+	Level time: 6260 game time, 6260 day time
+	Level storage version: 0x04ABD - Anvil
+	Level weather: Rain time: 25694 (now: false), thunder time: 149937 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: true
+Stacktrace:
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:865)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:800)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:118)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:646)
+	at java.lang.Thread.run(Thread.java:748)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.14.4
+	Minecraft Version ID: 1.14.4
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_232, BellSoft
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), 
+	Memory: 287335296 bytes (274 MB) / 1161822208 bytes (1108 MB) up to 1895825408 bytes (1808 MB)
+	CPUs: 4
+	JVM Flags: 1 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump
+	ModLauncher: 4.1.0+62+5bfa59b
+	ModLauncher launch target: fmluserdevclient
+	ModLauncher naming: mcp
+	ModLauncher services: 
+		/eventbus-1.0.0-service.jar eventbus PLUGINSERVICE 
+		/forge-1.14.4-28.2.3_mapped_snapshot_20190719-1.14.3-launcher.jar object_holder_definalize PLUGINSERVICE 
+		/forge-1.14.4-28.2.3_mapped_snapshot_20190719-1.14.3-launcher.jar runtime_enum_extender PLUGINSERVICE 
+		/accesstransformers-1.0.5-shadowed.jar accesstransformer PLUGINSERVICE 
+		/forge-1.14.4-28.2.3_mapped_snapshot_20190719-1.14.3-launcher.jar capability_inject_definalize PLUGINSERVICE 
+		/forge-1.14.4-28.2.3_mapped_snapshot_20190719-1.14.3-launcher.jar runtimedistcleaner PLUGINSERVICE 
+		/forge-1.14.4-28.2.3_mapped_snapshot_20190719-1.14.3-launcher.jar fml TRANSFORMATIONSERVICE 
+	FML: 28.2
+	Forge: net.minecraftforge:28.2.3
+	FML Language Providers: 
+		javafml@28.2
+		minecraft@1
+	Mod List: 
+		client-extra.jar Minecraft {minecraft@1.14.4 DONE}
+		main Magi-Tech {magitech@1.0.0 DONE}
+		forge-1.14.4-28.2.3_mapped_snapshot_20190719-1.14.3-recomp.jar Forge {forge@28.2.3 DONE}
+	Player Count: 1 / 8; [ServerPlayerEntity['Dev'/221, l='test', x=280.51, y=68.00, z=39.46]]
+	Data Packs: vanilla, mod:forge, mod:magitech
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'forge'

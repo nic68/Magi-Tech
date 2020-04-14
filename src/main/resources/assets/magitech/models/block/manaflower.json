@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "magitech:blocks/mana_flower2",
+    "particle": "magitech:blocks/mana_flower2"
+  }
+}

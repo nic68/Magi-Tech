@@ -1,0 +1,29 @@
+{
+  "group": "magitech",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "magitech:manasteelingot"
+    },
+    "1": {
+      "item": "magitech:manasteelingot"
+    },
+    "2": {
+      "item": "magitech:manasteelingot"
+    },
+    "3": {
+      "item": "magitech:manasteelingot"
+    },
+    "5": {
+      "item": "magitech:manasteelingot"
+    }
+  },
+  "result": {
+    "item": "magitech:manasteelarmorhelmet",
+    "count": 1
+  }
+}
