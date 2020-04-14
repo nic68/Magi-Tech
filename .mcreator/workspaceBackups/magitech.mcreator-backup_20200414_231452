@@ -198,6 +198,114 @@
       "compiles": true,
       "locked_code": false,
       "ids": {}
+    },
+    {
+      "name": "BasicMiningUnit",
+      "type": "block",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "BasicMiningUnitRedstoneOn",
+      "type": "procedure",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MagiTechBlocks",
+      "type": "tab",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "MagiTechResources",
+      "type": "tab",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "BasicMiningUnitRecipe",
+      "type": "recipe",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "BasicWand",
+      "type": "gun",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "BasicWandBulletHitsLivingEntity",
+      "type": "procedure",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BasicWandRecipe",
+      "type": "recipe",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
     }
   ],
   "variable_elements": [],
@@ -207,22 +315,26 @@
       "item.magitech.manasteelingot": "ManaSteel",
       "item.magitech.manasteelhoe": "ManaSteel Hoe",
       "block.magitech.manaflower": "Mana Flower",
+      "itemGroup.tabmagitechblocks": "Magi Tech Blocks",
       "item.magitech.manasteelarmorhelmet": "ManaSteel Helmet",
+      "block.magitech.basicminingunit": "Basic Mining Unit",
       "item.magitech.manasteelpickaxe": "ManaSteel Pickaxe",
       "item.magitech.manasteelaxe": "ManaSteel Axe",
       "block.magitech.manainfusionaltar": "Mana Infusion Altar",
       "item.magitech.bottledmana": "Bottled Mana",
       "item.magitech.manasteelshovel": "ManaSteel Shovel",
       "item.magitech.manasteelarmorboots": "ManaSteel Boots",
+      "item.magitech.basicwand": "Basic Wand",
       "item.magitech.manasteelarmorlegs": "ManaSteel Leggings",
       "item.magitech.manasteelsword": "ManaSteel Sword",
+      "itemGroup.tabmagitechresources": "Magi Tech Resources",
       "item.magitech.manasteelarmorbody": "ManaSteel Chestplate"
     }
   },
   "workspaceSettings": {
     "modid": "magitech",
-    "modName": "Magi-Tech",
-    "version": "1.0.0",
+    "modName": "MagiTech",
+    "version": "1.0.2",
     "description": "A simple tech mod that uses the power of magic and developer laziness, to power various machines.             ",
     "author": "TheRatMan.deb",
     "websiteURL": "https://github.com/nic68",

@@ -26,7 +26,7 @@
     "resistance": 15.0,
     "hasGravity": false,
     "creativeTab": {
-      "value": "MISC"
+      "value": "CUSTOM:MagiTechBlocks"
     },
     "destroyTool": "pickaxe",
     "affectedBySilkTouch": true,
@@ -63,10 +63,10 @@
     "breakHarvestLevel": 1,
     "spawnParticles": true,
     "particleToSpawn": {
-      "value": "SPELL_INSTANT"
+      "value": "SPELL_MOB"
     },
     "particleSpawningShape": "Top",
-    "particleSpawningRadious": 0.1,
+    "particleSpawningRadious": 0.5000000014901161,
     "particleAmount": 2,
     "particleSpawningCondition": "ALWAYS",
     "hasInventory": true,

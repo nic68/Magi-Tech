@@ -3,8 +3,8 @@ loaderVersion="[28,)"
 
 [[mods]]
 modId="magitech"
-version="1.0.0"
-displayName="Magi-Tech"
+version="1.0.2"
+displayName="MagiTech"
 credits="me"
 displayURL="https://github.com/nic68"
 logoFile="logo.png"

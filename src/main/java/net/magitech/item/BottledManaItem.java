@@ -9,11 +9,11 @@ import net.minecraft.world.World;
 import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.block.BlockState;
 
+import net.magitech.itemgroup.MagiTechResourcesItemGroup;
 import net.magitech.MagiTechElements;
 
 import java.util.List;
@@ -32,7 +32,7 @@ public class BottledManaItem extends MagiTechElements.ModElement {
 	}
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
-			super(new Item.Properties().group(ItemGroup.MATERIALS).maxStackSize(64));
+			super(new Item.Properties().group(MagiTechResourcesItemGroup.tab).maxStackSize(64));
 			setRegistryName("bottledmana");
 		}
 

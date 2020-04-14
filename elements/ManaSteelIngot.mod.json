@@ -7,7 +7,7 @@
     "customModelName": "Normal",
     "name": "ManaSteel",
     "creativeTab": {
-      "value": "MISC"
+      "value": "CUSTOM:MagiTechResources"
     },
     "stackSize": 64,
     "enchantability": 0,

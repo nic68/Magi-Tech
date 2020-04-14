@@ -10,7 +10,7 @@
     "growapableMaxHeight": 3,
     "name": "Mana Flower",
     "creativeTab": {
-      "value": "MATERIALS"
+      "value": "CUSTOM:MagiTechBlocks"
     },
     "hardness": 0.0,
     "resistance": 0.0,

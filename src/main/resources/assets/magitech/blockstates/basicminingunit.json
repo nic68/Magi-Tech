@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "magitech:block/basicminingunit"
+    },
+    "facing=east": {
+      "model": "magitech:block/basicminingunit",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "magitech:block/basicminingunit",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "magitech:block/basicminingunit",
+      "y": 270
+    }
+  }
+}

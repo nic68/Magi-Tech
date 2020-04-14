@@ -1,0 +1,11 @@
+{
+  "_fv": 6,
+  "_type": "tab",
+  "definition": {
+    "name": "Magi Tech Blocks",
+    "icon": {
+      "value": "CUSTOM:ManaInfusionAltar"
+    },
+    "showSearch": false
+  }
+}

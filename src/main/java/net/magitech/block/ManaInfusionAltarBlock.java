@@ -33,7 +33,6 @@ import net.minecraft.network.PacketBuffer;
 import net.minecraft.network.NetworkManager;
 import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.item.BlockItemUseContext;
 import net.minecraft.item.BlockItem;
@@ -51,6 +50,7 @@ import net.minecraft.block.HorizontalBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
+import net.magitech.itemgroup.MagiTechBlocksItemGroup;
 import net.magitech.gui.ManaInfusionGUIGui;
 import net.magitech.MagiTechElements;
 
@@ -74,7 +74,8 @@ public class ManaInfusionAltarBlock extends MagiTechElements.ModElement {
 	@Override
 	public void initElements() {
 		elements.blocks.add(() -> new CustomBlock());
-		elements.items.add(() -> new BlockItem(block, new Item.Properties().group(ItemGroup.MISC)).setRegistryName(block.getRegistryName()));
+		elements.items
+				.add(() -> new BlockItem(block, new Item.Properties().group(MagiTechBlocksItemGroup.tab)).setRegistryName(block.getRegistryName()));
 	}
 
 	@SubscribeEvent
@@ -134,10 +135,10 @@ public class ManaInfusionAltarBlock extends MagiTechElements.ModElement {
 			int k = z;
 			if (true)
 				for (int l = 0; l < 2; ++l) {
-					double d0 = (double) ((float) i + 0.5) + (double) (random.nextFloat() - 0.5) * 0.1D;
-					double d1 = ((double) ((float) j + 0.7) + (double) (random.nextFloat() - 0.5) * 0.1D) + 0.5;
-					double d2 = (double) ((float) k + 0.5) + (double) (random.nextFloat() - 0.5) * 0.1D;
-					world.addParticle(ParticleTypes.INSTANT_EFFECT, d0, d1, d2, 0, 0, 0);
+					double d0 = (double) ((float) i + 0.5) + (double) (random.nextFloat() - 0.5) * 0.5000000014901161D;
+					double d1 = ((double) ((float) j + 0.7) + (double) (random.nextFloat() - 0.5) * 0.5000000014901161D) + 0.5;
+					double d2 = (double) ((float) k + 0.5) + (double) (random.nextFloat() - 0.5) * 0.5000000014901161D;
+					world.addParticle(ParticleTypes.WITCH, d0, d1, d2, 0, 0, 0);
 				}
 		}
 

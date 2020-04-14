@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "magitech:blocks/mibottom",
+    "up": "magitech:blocks/mibottom",
+    "north": "magitech:blocks/mufront",
+    "east": "magitech:blocks/muside",
+    "south": "magitech:blocks/muside",
+    "west": "magitech:blocks/muside",
+    "particle": "magitech:blocks/mibottom"
+  }
+}
