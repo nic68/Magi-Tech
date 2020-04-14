@@ -174,6 +174,30 @@
       "compiles": true,
       "locked_code": false,
       "ids": {}
+    },
+    {
+      "name": "ManaInfusion",
+      "type": "procedure",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ManaInfusionAltarRecipe",
+      "type": "recipe",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
     }
   ],
   "variable_elements": [],
@@ -199,11 +223,12 @@
     "modid": "magitech",
     "modName": "Magi-Tech",
     "version": "1.0.0",
-    "description": "A simple tech mod that uses the power of magic and developer laziness.     ",
+    "description": "A simple tech mod that uses the power of magic and developer laziness, to power various machines.             ",
     "author": "TheRatMan.deb",
     "websiteURL": "https://github.com/nic68",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
+    "modPicture": "agiech",
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],

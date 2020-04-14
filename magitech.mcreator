@@ -190,6 +190,14 @@
           }
         ]
       }
+    },
+    {
+      "name": "ManaInfusionAltarRecipe",
+      "type": "recipe",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
     }
   ],
   "variable_elements": [],

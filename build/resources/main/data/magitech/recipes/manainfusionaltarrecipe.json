@@ -1,0 +1,42 @@
+{
+  "group": "magitech",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "magitech:manaflower"
+    },
+    "1": {
+      "item": "magitech:manaflower"
+    },
+    "2": {
+      "item": "magitech:manaflower"
+    },
+    "3": {
+      "item": "magitech:bottledmana"
+    },
+    "4": {
+      "item": "minecraft:redstone"
+    },
+    "5": {
+      "item": "magitech:bottledmana"
+    },
+    "6": {
+      "item": "minecraft:stone"
+    },
+    "7": {
+      "item": "minecraft:stone"
+    },
+    "8": {
+      "item": "minecraft:stone"
+    }
+  },
+  "result": {
+    "item": "magitech:manainfusionaltar",
+    "count": 1
+  }
+}
