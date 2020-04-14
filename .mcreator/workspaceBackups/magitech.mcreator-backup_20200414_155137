@@ -42,23 +42,7 @@
       "ids": {}
     },
     {
-      "name": "ManaStellOre",
-      "type": "block",
-      "sortid": 6,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {}
-    },
-    {
-      "name": "ManaStellOreBlock",
-      "type": "block",
-      "sortid": 7,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {}
-    },
-    {
-      "name": "ManaStellIngot",
+      "name": "ManaSteelIngot",
       "type": "item",
       "sortid": 8,
       "compiles": true,
@@ -66,31 +50,7 @@
       "ids": {}
     },
     {
-      "name": "ManaStellOreBlockRecipe",
-      "type": "recipe",
-      "sortid": 9,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {}
-    },
-    {
-      "name": "ManaStellBlockOreRecipe",
-      "type": "recipe",
-      "sortid": 10,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {}
-    },
-    {
-      "name": "ManaStellOreSmelting",
-      "type": "recipe",
-      "sortid": 11,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {}
-    },
-    {
-      "name": "ManaStellPickaxe",
+      "name": "ManaSteelPickaxe",
       "type": "tool",
       "sortid": 12,
       "compiles": true,
@@ -98,7 +58,7 @@
       "ids": {}
     },
     {
-      "name": "ManaStellAxe",
+      "name": "ManaSteelAxe",
       "type": "tool",
       "sortid": 13,
       "compiles": true,
@@ -106,7 +66,7 @@
       "ids": {}
     },
     {
-      "name": "ManaStellSword",
+      "name": "ManaSteelSword",
       "type": "tool",
       "sortid": 14,
       "compiles": true,
@@ -114,7 +74,7 @@
       "ids": {}
     },
     {
-      "name": "ManaStellShovel",
+      "name": "ManaSteelShovel",
       "type": "tool",
       "sortid": 15,
       "compiles": true,
@@ -122,7 +82,7 @@
       "ids": {}
     },
     {
-      "name": "ManaStellHoe",
+      "name": "ManaSteelHoe",
       "type": "tool",
       "sortid": 16,
       "compiles": true,
@@ -130,7 +90,7 @@
       "ids": {}
     },
     {
-      "name": "ManaStellPickaxeRecipe",
+      "name": "ManaSteelPickaxeRecipe",
       "type": "recipe",
       "sortid": 17,
       "compiles": true,
@@ -138,7 +98,7 @@
       "ids": {}
     },
     {
-      "name": "ManaStellAxeRecipe",
+      "name": "ManaSteelAxeRecipe",
       "type": "recipe",
       "sortid": 18,
       "compiles": true,
@@ -146,7 +106,7 @@
       "ids": {}
     },
     {
-      "name": "ManaStellSwordRecipe",
+      "name": "ManaSteelSwordRecipe",
       "type": "recipe",
       "sortid": 19,
       "compiles": true,
@@ -154,7 +114,7 @@
       "ids": {}
     },
     {
-      "name": "ManaStellShovelRecipe",
+      "name": "ManaSteelShovelRecipe",
       "type": "recipe",
       "sortid": 20,
       "compiles": true,
@@ -162,7 +122,7 @@
       "ids": {}
     },
     {
-      "name": "ManaStellHoeRecipe",
+      "name": "ManaSteelHoeRecipe",
       "type": "recipe",
       "sortid": 21,
       "compiles": true,
@@ -170,15 +130,21 @@
       "ids": {}
     },
     {
-      "name": "ManaStellArmor",
+      "name": "ManaSteelArmor",
       "type": "armor",
       "sortid": 22,
       "compiles": true,
       "locked_code": false,
-      "ids": {}
+      "ids": {},
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      }
     },
     {
-      "name": "ManaStellArmorHelmetRecipe",
+      "name": "ManaSteelArmorHelmetRecipe",
       "type": "recipe",
       "sortid": 23,
       "compiles": true,
@@ -186,7 +152,7 @@
       "ids": {}
     },
     {
-      "name": "ManaStellArmorBodyRecipe",
+      "name": "ManaSteelArmorBodyRecipe",
       "type": "recipe",
       "sortid": 24,
       "compiles": true,
@@ -194,7 +160,7 @@
       "ids": {}
     },
     {
-      "name": "ManaStellArmorLeggingsRecipe",
+      "name": "ManaSteelArmorLeggingsRecipe",
       "type": "recipe",
       "sortid": 25,
       "compiles": true,
@@ -202,33 +168,47 @@
       "ids": {}
     },
     {
-      "name": "ManaStellArmorBootsRecipe",
+      "name": "ManaSteelArmorBootsRecipe",
       "type": "recipe",
       "sortid": 26,
       "compiles": true,
       "locked_code": false,
       "ids": {}
+    },
+    {
+      "name": "ManaInfusion",
+      "type": "procedure",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "item.magitech.manastellsword": "ManaStell Sword",
+      "item.magitech.manasteelingot": "ManaSteel",
+      "item.magitech.manasteelhoe": "ManaSteel Hoe",
       "block.magitech.manaflower": "Mana Flower",
-      "item.magitech.manastellingot": "ManaStell",
-      "item.magitech.manastellshovel": "ManaStell Shovel",
-      "item.magitech.manastellarmorhelmet": "ManaStell Helmet",
-      "item.magitech.manastellpickaxe": "ManaStell Pickaxe",
-      "item.magitech.manastellhoe": "ManaStell Hoe",
-      "block.magitech.manastelloreblock": "Block of ManaStell",
-      "item.magitech.manastellarmorlegs": "ManaStell Leggings",
+      "item.magitech.manasteelarmorhelmet": "ManaSteel Helmet",
+      "item.magitech.manasteelpickaxe": "ManaSteel Pickaxe",
+      "item.magitech.manasteelaxe": "ManaSteel Axe",
       "block.magitech.manainfusionaltar": "Mana Infusion Altar",
-      "item.magitech.manastellarmorbody": "ManaStell Chestplate",
       "item.magitech.bottledmana": "Bottled Mana",
-      "block.magitech.manastellore": "ManaStell Ore",
-      "item.magitech.manastellaxe": "ManaStell Axe",
-      "item.magitech.manastellarmorboots": "ManaStell Boots"
+      "item.magitech.manasteelshovel": "ManaSteel Shovel",
+      "item.magitech.manasteelarmorboots": "ManaSteel Boots",
+      "item.magitech.manasteelarmorlegs": "ManaSteel Leggings",
+      "item.magitech.manasteelsword": "ManaSteel Sword",
+      "item.magitech.manasteelarmorbody": "ManaSteel Chestplate"
     }
   },
   "workspaceSettings": {

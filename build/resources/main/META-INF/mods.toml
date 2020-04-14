@@ -7,9 +7,10 @@ version="1.0.0"
 displayName="Magi-Tech"
 credits="me"
 displayURL="https://github.com/nic68"
+logoFile="logo.png"
 authors="TheRatMan.deb"
 description='''
-A simple tech mod that uses the power of magic and developer laziness.     
+A simple tech mod that uses the power of magic and developer laziness, to power various machines.             
 '''
 
 [[dependencies.magitech]]
